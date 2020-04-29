@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.2.5",
     "gatsby-plugin-sass": "^2.2.4",
     "gatsby-plugin-sharp": "^2.5.7",
+    "gatsby-plugin-smoothscroll": "^1.1.0",
     "gatsby-source-filesystem": "^2.2.5",
     "gatsby-transformer-sharp": "^2.4.7",
     "gsap": "^3.2.6",

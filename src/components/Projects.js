@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import LargeImage from "../images/Syklmac.png"
 import DuckHunt from "../images/DuckMac.png"
 import HomeImage from "../images/Homecookedmac.png"
@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 const Projects = () => {
   return (
     <Layout>
-      <div className="projects-container">
+      <div className="projects-container" id="projects">
         <div className="project-container">
           <div className="image-container">
             <a
@@ -16,7 +16,7 @@ const Projects = () => {
               target="_blank"
             >
               <img
-                className="large-image"
+                className="project-image"
                 src={LargeImage}
                 alt="Sykkel Web App"
               />
@@ -40,7 +40,7 @@ const Projects = () => {
               rel="noreferrer noopener"
               target="_blank"
             >
-              <img className="large-image" src={DuckHunt} alt="Duck Hunt" />
+              <img className="project-image" src={DuckHunt} alt="Duck Hunt" />
             </a>
           </div>
           <div className="description-container">
@@ -55,7 +55,7 @@ const Projects = () => {
               rel="noreferrer noopener"
               target="_blank"
             >
-              <img className="large-image" src={HomeImage} alt="HomeCooked" />
+              <img className="project-image" src={HomeImage} alt="HomeCooked" />
             </a>
           </div>
           <div className="description-container">

@@ -1,37 +1,36 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
+import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
+import Arrow from "../images/rightarrow.png"
 
-const Navbar = () => {
-  const [expander, setExpander] = useState(false)
-
+const Navbar = ({ spinning, spin }) => {
   return (
     <div className="navbar-container">
-      <p
-        onMouseEnter={() => setExpander(true)}
-        onMouseLeave={setTimeout(() => setExpander(false), 5000)}
-      >
-        T
-      </p>
-      {expander && (
-        <nav
-        // onMouseLeave={setTimeout(() => setExpander(false), 2000)}
-        >
-          <ul onMouseEnter={() => setExpander(true)}>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/Projects/">Projects</Link>
-            </li>
-            <li>
-              <Link to="/About/">About</Link>
-            </li>
-            <li>
-              <Link to="/Contact/">Contact</Link>{" "}
-            </li>
-          </ul>
-        </nav>
-      )}
+      <button onClick={spinning} className={!spin ? "no-show" : "show"}>
+        <h2 className={!spin ? "static" : "spin"}>
+          <img
+            src={Arrow}
+            alt="navigation arrow"
+            style={{ width: "3rem", color: "white" }}
+          />
+        </h2>
+      </button>
+
+      <nav>
+        <ul>
+          <li>
+            <button onClick={() => scrollTo("#home")}>Home</button>
+          </li>
+          <li>
+            <button onClick={() => scrollTo("#projects")}>Projects</button>
+          </li>
+          <li>
+            <button onClick={() => scrollTo("#about")}>About</button>
+          </li>
+          <li>
+            <button onClick={() => scrollTo("#contact")}>Contact</button>
+          </li>
+        </ul>
+      </nav>
     </div>
   )
 }
