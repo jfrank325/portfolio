@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import LargeImage from "../images/Syklmac.png"
 import DuckHunt from "../images/DuckMac.png"
 import HomeImage from "../images/Homecookedmac.png"
@@ -45,7 +45,13 @@ const Projects = () => {
           </div>
           <div className="description-container">
             <h1>DuckHunt 2020</h1>
-            <h4>Description</h4>
+            <h4>
+              {" "}
+              Long distance cycling app created with React, Node.js, Express.js,
+              MongoDB, and a variety of Mapbox technologies to allow the user to
+              plan their next great cycling adventure by customizing their trip
+              step by step with the most optimal cycling conditions.
+            </h4>
           </div>
         </div>
         <div className="project-container">
@@ -60,7 +66,13 @@ const Projects = () => {
           </div>
           <div className="description-container">
             <h1>HomeCooked</h1>
-            <h4>Description</h4>
+            <h4>
+              {" "}
+              Long distance cycling app created with React, Node.js, Express.js,
+              MongoDB, and a variety of Mapbox technologies to allow the user to
+              plan their next great cycling adventure by customizing their trip
+              step by step with the most optimal cycling conditions.
+            </h4>
           </div>
         </div>
       </div>

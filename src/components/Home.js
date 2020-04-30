@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import Image from "../images/LightBlueFire.jpg"
 import Navbar from "./Navbar"
 import Projects from "./Projects"
 import About from "./About"

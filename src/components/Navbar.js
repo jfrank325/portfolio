@@ -1,20 +1,15 @@
 import React from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
-import Arrow from "../images/rightarrow.png"
+import Arrow from "../images/whitearrow.png"
 
 const Navbar = ({ spinning, spin }) => {
   return (
     <div className="navbar-container">
       <button onClick={spinning} className={!spin ? "no-show" : "show"}>
         <h2 className={!spin ? "static" : "spin"}>
-          <img
-            src={Arrow}
-            alt="navigation arrow"
-            style={{ width: "3rem", color: "white" }}
-          />
+          <img src={Arrow} alt="navigation arrow" />
         </h2>
       </button>
-
       <nav>
         <ul>
           <li>
