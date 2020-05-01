@@ -7,12 +7,7 @@ import Contact from "./Contact"
 const Home = () => {
   const [spin, setSpin] = useState(false)
   const spinning = () => {
-    setSpin(!spin)
-    setTimeout =
-      (() => {
-        setSpin(false)
-      },
-      1000)
+    setSpin(true)
   }
   return (
     <div className="home-container" id="home">
@@ -21,7 +16,7 @@ const Home = () => {
         className={!spin ? "home-container-full" : "home-container-small"}
       >
         <div className="home-content-container">
-          <h1>Jason Franklin Web Developer</h1>
+          <h1 className={spin && "grow"}>Jason Franklin Web Developer</h1>
           <Navbar spinning={spinning} spin={spin} />
         </div>
       </div>

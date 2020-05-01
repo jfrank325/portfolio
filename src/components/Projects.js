@@ -3,12 +3,13 @@ import LargeImage from "../images/Syklmac.png"
 import DuckHunt from "../images/DuckMac.png"
 import HomeImage from "../images/Homecookedmac.png"
 import Layout from "../components/layout"
+import ScrollAnimation from "react-animate-on-scroll"
 
 const Projects = () => {
   return (
-    <Layout>
-      <div className="projects-container" id="projects">
-        <div className="project-container">
+    <div className="projects-container" id="projects">
+      <ScrollAnimation animateIn="opaque">
+        <div className="project-container opaque">
           <div className="image-container">
             <a
               href="http://sykl.ist/"
@@ -22,18 +23,23 @@ const Projects = () => {
               />
             </a>
           </div>
+
           <div className="description-container">
             <h1>Sykkel</h1>
-            <h4>
-              Long distance cycling app created with React, Node.js, Express.js,
-              MongoDB, and a variety of Mapbox technologies to allow the user to
-              plan their next great cycling adventure by customizing their trip
-              step by step with the most optimal cycling conditions.
-            </h4>
-            <p>{"\ud83e\udd47"}Winner of the Ironhack Hackshow</p>
+            <h4>{"\ud83e\udd47"}Winner of the Ironhack Hackshow</h4>
+            <p>
+              Long distance cycling trip planner that allows the user to plan
+              their next great cycling adventure by customizing their trip step
+              by step with the most optimal cycling conditions. Created with
+              React, Node.js, Express.js, MongoDB, and a variety of Mapbox
+              technologies. Created in collaboration with "Jackie and the Ferry
+              Boys"
+            </p>
           </div>
         </div>
-        <div className="project-container">
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="opaque">
+        <div className="project-container opaque">
           <div className="image-container">
             <a
               href="https://jfrank325.github.io/DuckHunt2020/"
@@ -45,16 +51,18 @@ const Projects = () => {
           </div>
           <div className="description-container">
             <h1>DuckHunt 2020</h1>
-            <h4>
+            <h4>{"\ud83e\udd47"}Voted Best First Project IronHack Berlin</h4>
+            <p>
               {" "}
-              Long distance cycling app created with React, Node.js, Express.js,
-              MongoDB, and a variety of Mapbox technologies to allow the user to
-              plan their next great cycling adventure by customizing their trip
-              step by step with the most optimal cycling conditions.
-            </h4>
+              Realistic Duck Hunting game created with Javascript and P5.js. Be
+              prepared for anything... You never know when the hunter might
+              become the hunted!
+            </p>
           </div>
         </div>
-        <div className="project-container">
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="opaque">
+        <div className="project-container opaque">
           <div className="image-container">
             <a
               href="https://homecooked1.herokuapp.com/"
@@ -66,17 +74,17 @@ const Projects = () => {
           </div>
           <div className="description-container">
             <h1>HomeCooked</h1>
-            <h4>
-              {" "}
-              Long distance cycling app created with React, Node.js, Express.js,
-              MongoDB, and a variety of Mapbox technologies to allow the user to
-              plan their next great cycling adventure by customizing their trip
-              step by step with the most optimal cycling conditions.
-            </h4>
+            <p>
+              Social meal sharing app allowing users to host meals in their home
+              as well as join as a guest in others with the hope of connecting
+              with people in their communities, having another option to
+              restaurants, as well as reducing food waste. Created with
+              Javascript, Node.js, Express.js, Handlebars.js and AJAX.
+            </p>
           </div>
         </div>
-      </div>
-    </Layout>
+      </ScrollAnimation>
+    </div>
   )
 }
 
