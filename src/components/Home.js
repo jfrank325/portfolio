@@ -16,7 +16,9 @@ const Home = () => {
         className={!spin ? "home-container-full" : "home-container-small"}
       >
         <div className="home-content-container">
-          <h1 className={spin && "grow"}>Jason Franklin Web Developer</h1>
+          <h1 className={spin ? "grow" : undefined}>
+            Jason Franklin Web Developer
+          </h1>
           <Navbar spinning={spinning} spin={spin} />
         </div>
       </div>

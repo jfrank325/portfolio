@@ -35,7 +35,7 @@ a {
 @keyframes opaque {
   0% {
     opacity: 0.1;
-    transition: opacity 2s ease-out;
+    transition: opacity 3s ease-in-out;
     transition-delay: 2s;
   }
 }
@@ -110,20 +110,15 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // mix-blend-mode: difference;
   .spin {
     transition: transform 2s ease-out;
     transform: rotateZ(90deg) scale(0.8);
     transform-origin: center;
   }
-  .static {
-  }
   .show ~ nav {
     visibility: visible;
     animation: opaque 3s;
-
     top: 20px;
-    // mix-blend-mode: difference;
   }
   .show ~ nav ul {
     justify-content: flex-end;
@@ -134,7 +129,6 @@ a {
   }
   button {
     background-color: rgba(255, 255, 255, 0);
-
     border: none;
     font-family: -apple-system, Oxygen, Ubuntu, Cantarell, "Open Sans";
     padding-bottom: 5rem;
@@ -149,7 +143,6 @@ a {
   }
   nav {
     visibility: hidden;
-    // width: 100vw;
     ul {
       display: flex;
       list-style-type: none;
@@ -183,12 +176,10 @@ a {
     height: 80vh;
     border-bottom: 1px solid rgb(189, 189, 189);
     margin: 0 2rem;
-
     .image-container {
       a {
         width: 2rem;
         .project-image {
-          // animation: side-enter 2s;
           width: 55rem;
           margin: 0 auto;
           padding: 0;
@@ -200,7 +191,6 @@ a {
         }
       }
     }
-
     .description-container {
       width: 35rem;
       padding: 0 0.01rem;
@@ -276,6 +266,10 @@ a {
 
   .navbar-container {
     padding: 0.5rem;
+    .show ~ nav li {
+      padding: 0.8rem;
+      transition: padding 2s ease-out;
+    }
     nav {
       ul {
         li {
@@ -290,7 +284,6 @@ a {
   .projects-container {
     .project-container {
       flex-direction: column;
-
       .project-image {
         max-width: 18rem;
         margin: 0 auto;
@@ -301,7 +294,6 @@ a {
       .description-container {
         max-width: 18rem;
         text-align: center;
-        // margin: 0 auto;
       }
     }
   }
