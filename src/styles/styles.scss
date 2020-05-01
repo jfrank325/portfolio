@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: #ebebeb;
+  background-color: #f1f1f1;
   font-size: 16px;
   font-family: -apple-system, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
@@ -219,10 +219,12 @@ a {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
+
     .picture img {
       width: 22rem;
     }
     .content {
+      width: 35rem;
       h1 {
         padding-bottom: 3rem;
       }
@@ -294,13 +296,33 @@ a {
       .description-container {
         max-width: 18rem;
         text-align: center;
+        font-size: 75%;
+        h1 {
+          margin-bottom: 1rem;
+        }
+        h4 {
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-bottom: 0.6rem;
+        }
       }
     }
   }
-  .about-container {
-    flex-direction: column;
-    .picture img {
-      width: 16rem;
+  .opaque {
+    .about-container {
+      flex-direction: column;
+      .picture img {
+        width: 16rem;
+      }
+      .content {
+        width: 16rem;
+        h1 {
+        }
+        p {
+          font-size: 75%;
+        }
+      }
     }
   }
   .contact-container {
