@@ -6,9 +6,7 @@ import Contact from "./Contact"
 
 const Home = () => {
   const [spin, setSpin] = useState(false)
-  const spinning = () => {
-    setSpin(true)
-  }
+
   return (
     <div className="home-container" id="home">
       <div
@@ -19,7 +17,10 @@ const Home = () => {
           <h1 className={spin ? "grow" : undefined}>
             Jason Franklin Web Developer
           </h1>
-          <Navbar spinning={spinning} spin={spin} />
+          <Navbar
+            spinning={() => setSpin(spin === false ? true : false)}
+            spin={spin}
+          />
         </div>
       </div>
       <Projects />
