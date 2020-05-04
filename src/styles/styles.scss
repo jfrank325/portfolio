@@ -70,18 +70,14 @@ a {
 .home-container {
   .home-container-full {
     animation: opaque 2s;
-    // width: 100%;
     height: 100vh;
     background-image: url(../images/Fluid.jpg);
-    background-size: cover;
   }
   .home-container-small {
     animation: opaque 2s;
-    width: 100%;
     height: 84vh;
     transition: height 2s ease-out;
     background-image: url(../images/Fluid.jpg);
-    background-size: cover;
   }
   .home-content-container {
     display: flex;
@@ -172,9 +168,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 80vh;
+    height: 80%;
     border-bottom: 1px solid rgb(189, 189, 189);
     margin: 0 2rem;
+    padding-bottom: 0.1rem;
     .image-container {
       a {
         width: 2rem;
@@ -193,7 +190,7 @@ a {
     .description-container {
       width: 35rem;
       padding: 0 0.01rem;
-
+      transition: transform 1s ease-out;
       color: var(--night);
       h1 {
         margin-bottom: 3rem;
@@ -205,6 +202,9 @@ a {
       p {
         margin-bottom: 1.4rem;
       }
+    }
+    .description-container:hover {
+      transform: scale(1.05);
     }
   }
 }
@@ -311,6 +311,7 @@ a {
   .opaque {
     .about-container {
       flex-direction: column;
+      height: 90vh;
       .picture img {
         width: 16rem;
       }
