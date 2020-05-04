@@ -150,6 +150,7 @@ a {
           background-blend-mode: difference;
           transition: color 0.5s ease-out;
           font-size: 1.5rem;
+          font-weight: 600;
         }
         button:hover {
           color: rgb(182, 182, 182);
@@ -253,7 +254,7 @@ a {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .home-container {
     .home-container-full {
     }
