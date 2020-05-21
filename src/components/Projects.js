@@ -2,6 +2,7 @@ import React from "react"
 import LargeImage from "../images/Syklmac.png"
 import DuckHunt from "../images/DuckMac.png"
 import HomeImage from "../images/Homecookedmac.png"
+import DancerParty from "../images/DancerPartyMac.png"
 import ScrollAnimation from "react-animate-on-scroll"
 
 const Projects = () => {
@@ -41,21 +42,23 @@ const Projects = () => {
         <div className="project-container opaque">
           <div className="image-container">
             <a
-              href="https://jfrank325.github.io/DuckHunt2020/"
+              href="https://dancerparty.herokuapp.com/"
               rel="noreferrer noopener"
               target="_blank"
             >
-              <img className="project-image" src={DuckHunt} alt="Duck Hunt" />
+              <img
+                className="project-image"
+                src={DancerParty}
+                alt="Dance Party"
+              />
             </a>
           </div>
           <div className="description-container">
-            <h1>DuckHunt 2020</h1>
-            <h4>{"\ud83e\udd47"}Voted Best First Project IronHack Berlin</h4>
+            <h1>DanceParty</h1>
             <p>
-              {" "}
-              Realistic Duck Hunting game created with Javascript and P5.js. Be
-              prepared for anything... You never know when the hunter might
-              become the hunted!
+              DanceParty is a social network app created specifically for
+              dancers. It allows dancers to come together to talk about what's
+              going on in the dance world today. Created with MERN stack.
             </p>
           </div>
         </div>
@@ -79,6 +82,29 @@ const Projects = () => {
               with people in their communities, having another option to
               restaurants, as well as reducing food waste. Created with
               Javascript, Node.js, Express.js, Handlebars.js and AJAX.
+            </p>
+          </div>
+        </div>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="opaque">
+        <div className="project-container opaque">
+          <div className="image-container">
+            <a
+              href="https://jfrank325.github.io/DuckHunt2020/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img className="project-image" src={DuckHunt} alt="Duck Hunt" />
+            </a>
+          </div>
+          <div className="description-container">
+            <h1>DuckHunt 2020</h1>
+            <h4>{"\ud83e\udd47"}Voted Best First Project IronHack Berlin</h4>
+            <p>
+              {" "}
+              Realistic Duck Hunting game created with Javascript and P5.js. Be
+              prepared for anything... You never know when the hunter might
+              become the hunted!
             </p>
           </div>
         </div>
