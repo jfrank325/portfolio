@@ -22,7 +22,6 @@ body {
   font-size: 16px;
   font-family: Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6rem;
-
   letter-spacing: 0.05rem;
   scroll-behavior: smooth;
 }
@@ -269,9 +268,6 @@ a {
       .project-image {
         max-width: 18rem;
         margin: 0 auto;
-      }
-      .project-image:hover {
-        width: 19rem;
       }
       .description-container {
         max-width: 18rem;
