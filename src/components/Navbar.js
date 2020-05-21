@@ -12,9 +12,9 @@ const Navbar = ({ spinning, spin }) => {
       </button>
       <nav>
         <ul>
-          <li>
+          {/* <li>
             <button onClick={() => scrollTo("#home")}>Home</button>
-          </li>
+          </li> */}
           <li>
             <button onClick={() => scrollTo("#projects")}>Projects</button>
           </li>
