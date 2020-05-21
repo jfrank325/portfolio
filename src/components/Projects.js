@@ -54,9 +54,9 @@ const Projects = () => {
             </a>
           </div>
           <div className="description-container">
-            <h1>DanceParty</h1>
+            <h1>DancerParty</h1>
             <p>
-              DanceParty is a social network app created specifically for
+              DancerParty is a social network app created specifically for
               dancers. It allows dancers to come together to talk about what's
               going on in the dance world today. Created with MERN stack.
             </p>
