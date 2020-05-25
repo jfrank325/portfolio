@@ -98,7 +98,8 @@ a {
     justify-content: flex-end;
   }
   .show ~ nav li {
-    padding: 3rem;
+    padding: 4.5rem;
+
     transition: padding 2s ease-out;
   }
   button {
@@ -128,7 +129,7 @@ a {
           color: whitesmoke;
           background-blend-mode: difference;
           transition: color 0.5s ease-out;
-          font-size: 1.5rem;
+          font-size: 1.6rem;
           font-weight: 600;
         }
         button:hover {
@@ -248,7 +249,7 @@ a {
   .navbar-container {
     padding: 0.5rem;
     .show ~ nav li {
-      padding: 0.8rem;
+      padding: 1.4rem;
       transition: padding 2s ease-out;
     }
     nav {
