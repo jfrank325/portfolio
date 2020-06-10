@@ -2,7 +2,7 @@ import React from "react"
 import LargeImage from "../images/Syklmac.png"
 import DuckHunt from "../images/DuckMac.png"
 import HomeImage from "../images/Homecookedmac.png"
-import DancerParty from "../images/DancerPartyMac.png"
+import DancerParty from "../images/DP.png"
 import ScrollAnimation from "react-animate-on-scroll"
 
 const Projects = () => {

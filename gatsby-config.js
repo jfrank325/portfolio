@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: "/jfrank325/portfolio",
   siteMetadata: {
-    title: `Jason Franklin Developer`,
+    title: `Jason Franklin Web Developer`,
     description: `Jason Franklin Full-Stack Developer Personal Portfolio`,
     author: `Jason Franklin`,
   },
@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/Jasonroundtouched.png`, // This path is relative to the root of the site.
+        icon: `src/images/Jasonroundtouched.png`,
       },
     },
     `gatsby-plugin-sass`,
