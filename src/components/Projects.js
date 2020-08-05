@@ -1,13 +1,42 @@
 import React from "react"
 import LargeImage from "../images/Syklmac.png"
 import DuckHunt from "../images/DuckMac.png"
-import HomeImage from "../images/Homecookedmac.png"
+import Nolton from "../images/NoltonMac.png"
 import DancerParty from "../images/DP.png"
 import ScrollAnimation from "react-animate-on-scroll"
 
 const Projects = () => {
   return (
     <div className="projects-container" id="projects">
+      <ScrollAnimation animateIn="opaque">
+        <div className="project-container opaque">
+          <div className="image-container">
+            <a
+              href="https://noltondrive.in/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                className="project-image"
+                src={Nolton}
+                alt="Nolton Drive In"
+              />
+            </a>
+          </div>
+          <div className="description-container">
+            <h1>NOLTON DRIVE-IN</h1>
+            <p>
+              Web application built for the newly developed Nolton Drive-In
+              movie theater in Wales. Allowing guests a smooth covid friendly
+              cinema experience. Guests can make all purchases for tickets,
+              meals, and drinks before and during the films directly on the app,
+              while the attendent can keep track on a custom sub-domain of all
+              visitor and order information. Created with Next.js, Node.js,
+              MongoDB, Sanity.io(cms), and React(CRA-for business side).
+            </p>
+          </div>
+        </div>
+      </ScrollAnimation>
       <ScrollAnimation animateIn="opaque">
         <div className="project-container opaque">
           <div className="image-container">
@@ -63,7 +92,7 @@ const Projects = () => {
           </div>
         </div>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="opaque">
+      {/* <ScrollAnimation animateIn="opaque">
         <div className="project-container opaque">
           <div className="image-container">
             <a
@@ -85,7 +114,7 @@ const Projects = () => {
             </p>
           </div>
         </div>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
       <ScrollAnimation animateIn="opaque">
         <div className="project-container opaque">
           <div className="image-container">
