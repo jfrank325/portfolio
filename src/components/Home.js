@@ -3,6 +3,7 @@ import Navbar from "./Navbar"
 import Projects from "./Projects"
 import About from "./About"
 import Contact from "./Contact"
+import ScrollToTop from "./ScrollToTop"
 
 const Home = () => {
   const [spin, setSpin] = useState(false)
@@ -23,6 +24,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <ScrollToTop />
       <Projects />
       <About />
       <Contact />

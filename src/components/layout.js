@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import ScrollToTop from "../components/ScrollToTop"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
@@ -24,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <main>{children}</main>
+      <ScrollToTop /> <main>{children}</main>
     </>
   )
 }

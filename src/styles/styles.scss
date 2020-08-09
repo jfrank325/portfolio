@@ -1,7 +1,7 @@
 :root {
   /* Primary */
   --white: #f5f5f5;
-  --night: #2b2b41; /* Text */
+  --night: #002346; /* Text */
   --sunrise: #ff6962; /* Primary call to action color */
   /* Secondary */
   --dusk: #48527b; /* "Highlight" background color */
@@ -232,6 +232,39 @@ a {
   }
   .contact:hover {
     padding-bottom: 2rem;
+  }
+}
+
+// Scroll To Top
+
+.scroll-container {
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 100%;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+  z-index: 10;
+  height: 2rem;
+  animation: fadeIn 0.3s;
+  justify-content: flex-end;
+  align-items: center;
+  .scroll-container:hover {
+    opacity: 1;
+  }
+  p {
+  }
+  img {
+    width: 1.5rem;
+    transform: rotate(-90deg);
   }
 }
 
