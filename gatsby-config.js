@@ -15,6 +15,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    // {
+    //   resolve: "gatsby-plugin-og-images",
+    //   options: {
+    //     template: "./public/Jasonroundtouched.png",
+    //     domain: process.env.GATSBY_DOMAIN,
+    //     debug: true,
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
